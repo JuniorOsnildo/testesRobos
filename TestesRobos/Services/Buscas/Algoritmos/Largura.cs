@@ -18,8 +18,7 @@ public class Largura : IBuscaCaminho
         while (fila.Count > 0)
         {
             var atual = fila.Dequeue();
-            if (atual.X == xFinal && atual.Y == yFinal) 
-                return UtilBusca.ReconstruirCaminho(atual); 
+            if (atual.X == xFinal && atual.Y == yFinal) return UtilBusca.ReconstruirCaminho(atual); 
 
             foreach (var (dx, dy) in UtilBusca.Direcoes)
             {

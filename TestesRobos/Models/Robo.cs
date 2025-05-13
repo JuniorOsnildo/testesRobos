@@ -13,9 +13,4 @@ public class Robo(int y,int x, EnumObjetos enumObjeto, string valor = "")
     {
         return (Robo)MemberwiseClone();
     }
-
-    public override string ToString()
-    {
-        return $"{valor}";
-    }
 }

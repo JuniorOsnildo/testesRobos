@@ -40,7 +40,7 @@ public static class RotaService
         }
 
         //vai até última coluna (direita)
-        while (atual.Y < MapaRepository.Mapa.GetLength(1) - 2)
+        while (atual.Y < MapaRepository.Mapa.GetLength(1) - 1)
         {
             atual = MapaRepository.Mapa[atual.X, atual.Y + 1];
             caminhoIda.Add(new Nodo(atual.X, atual.Y));
